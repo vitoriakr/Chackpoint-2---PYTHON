@@ -70,28 +70,28 @@ while True:
     if nome in nomes_proibidos:
         print("Esse nome não é permitido! Escolha outro.")
         continue
-    print(f"O nome {character_user} é válido!\n CONTINUE E ESCOLHA SEU TIPO DE PERSONAGEM!\n")
+    print(f"O nome {character_user} é válido!\nCONTINUE E ESCOLHA SEU TIPO DE PERSONAGEM!\n")
     itens = []
-    number_choice = input('DIGITE O NÚMERO:\n1 - Guerreiro (tanque)\n2 - Assasino (DPS)\n3 - Mago (conjurador)\n4 - Clérico (curandeiro)\n5 - Arqueiro (suporte)')
+    number_choice = input('DIGITE O NÚMERO:\n1 - Guerreiro (tanque)\n2 - Assasino (DPS)\n3 - Mago (conjurador)\n4 - Clérico (curandeiro)\n5 - Arqueiro (suporte)\nQual número você escolhe: ')
     match number_choice:
-        case 1:
-            print('Você escolheu ser um Guerreiro')
+        case "1":
             itens.extend(["Martelo","Canhão","Espada"])
             type_character = "guerreiro"
-        case 2:
-            print('Você escolheu ser um Assasino')
+            print(f'Você escolheu ser um Guerreiro!\nVocê recebeu os reguintes itens: {itens}')
+        case "2":
             itens.extend(["Faca Dupla","Veneno","Corda"])
             type_character = "Assasino"
-        case 3:
-            print('Você escolheu ser um Mago')
+            print(f'Você escolheu ser um Assasino!\nVocê recebeu os reguintes itens: {itens}')
+        case "3":
             itens.extend(["Vara","Kit Poçoes","Barsa"])
             type_character = "Mago"
-        case 4:
-            print('Você escolheu ser um Clérico')
+            print(f'Você escolheu ser um Mago!\nVocê recebeu os reguintes itens: {itens}')
+        case "4":
             itens.extend(["Ervas","Biblia","Cruz Grande"])
             type_character = "Clérico"
-        case 5:
-            print('Você escolheu ser um Arqueiro')
+            print(f'Você escolheu ser um Clérico!\nVocê recebeu os reguintes itens: {itens}')
+        case "5":
             itens.extend(["Arco e flecha","Querosene","Granadas"])
             type_character = "Arqueiro"
+            print(f'Você escolheu ser um Arqueiro!\nVocê recebeu os reguintes itens: {itens}')
     break   
