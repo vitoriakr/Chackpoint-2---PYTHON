@@ -65,12 +65,12 @@ if is_email_valid == True and is_password_valid == True:
     forbidden_names = ["admin", "deus", "mestre"]
 
 while True:
-    character_user = input("Digite o nome do seu personagem: ")
+    character_user = input("\nDigite o nome do seu personagem: ")
     name = character_user.strip().replace(" ", "_").isalpha()
     if name in forbidden_names:
-        print("Esse nome não é permitido! Escolha outro.")
+        print("\nEsse nome não é permitido! Escolha outro.")
         continue
-    print(f"O nome {character_user} é válido!\nCONTINUE E ESCOLHA SEU TIPO DE PERSONAGEM!\n")
+    print(f"\nO nome {character_user} é válido!\nCONTINUE E ESCOLHA SEU TIPO DE PERSONAGEM!\n")
     
     itens = []
     number_choice = input('DIGITE O NÚMERO:\n1 - Guerreiro (tanque)\n2 - Assasino (DPS)\n3 - Mago (conjurador)\n4 - Clérico (curandeiro)\n5 - Arqueiro (suporte)\nQual número você escolhe: ')
@@ -97,19 +97,19 @@ while True:
             print(f'Você escolheu ser um Arqueiro!\nVocê recebeu os reguintes itens: {itens}')
     break 
 
-print("="*50)
-print(f"-" * 5, " Você encontrou um baú misterioso!", "-" * 5,)
-print("="*50)
+print('='*50)
+print(f'-' * 5, ' Você encontrou um baú misterioso! ', '-' * 5,)
+print('='*50)
 
 rare_items = {
-    "Guerreiro": "Espada Lendária",
-    "Assasino": "Adaga Sombria",
-    "Mago": "Grimório Proibido",
-    "Clérico": "Relíquia Sagrada",
-    "Arqueiro": "Arco Élfico"
+    'Guerreiro': 'Espada Lendária',
+    'Assasino': 'Adaga Sombria',
+    'Mago': 'Grimório Proibido',
+    'Clérico': 'Relíquia Sagrada',
+    'Arqueiro': 'Arco Élfico'
 }
 while True:
-    chest_choice = input('Você escolhe abrir o baú? (sim/não): ').strip().lower()
+    chest_choice = input('\nVocê escolhe abrir o baú? (sim/não): ').strip().lower()
     if chest_choice not in ['sim','SIM','nao','não', 'NÃO']:
         print('Resposta inválida!   Tente novamente')
         continue
@@ -117,8 +117,8 @@ while True:
 if chest_choice == 'sim':
     rare_items = rare_items[type_character]
     itens.append(rare_items)
-    print(f'Você encontrou: -- {rare_items} --')
-    print(f'Inventário atual: {itens}')
+    print(f'\nVocê encontrou: -- {rare_items} --')
+    print(f'\nInventário atual: {itens}')
 else:
     print('Você ignorou o baú e seguiu em frente...')
     
@@ -126,16 +126,16 @@ else:
 #*evento do ladrão
     
 
-print("*" * 40)
-print("FICHA DO HERÓI".center(40))
+print('*' * 40)
+print('FICHA DO HERÓI'.center(40))
 
 print('*' * 40)
-print(f'Nome:                {character_user}')
-print(f'Classe:              {type_character.capitalize()}')
+print(f'\nNome:                {character_user}')
+print(f'\nClasse:              {type_character}')
 if len(itens) == 0:
-    print('Inventário: vazio...')
+    print('\nInventário: vazio...')
 else:
-    print(f'Inventario: ')
+    print(f'\nInventario: ')
     for item in itens:
         print(f'                     [ {item} ]')
 print('*' * 40)
