@@ -102,14 +102,14 @@ print(f"-" * 5, " Você encontrou um baú misterioso!", "-" * 5,)
 print("="*50)
 
 rare_items = {
-    "Guerreiro": " Espada Lendária",
-    "Assasino": " Adaga Sombria",
-    "Mago": " Grimório Proibido",
-    "Clérico": " Relíquia Sagrada",
-    "Arqueiro": " Arco Élfico"
+    "Guerreiro": "Espada Lendária",
+    "Assasino": "Adaga Sombria",
+    "Mago": "Grimório Proibido",
+    "Clérico": "Relíquia Sagrada",
+    "Arqueiro": "Arco Élfico"
 }
 while True:
-    chest_choice = input('Você escolhe abir o baú? (sim/não): ').strip().lower()
+    chest_choice = input('Você escolhe abrir o baú? (sim/não): ').strip().lower()
     if chest_choice not in ['sim','SIM','nao','não', 'NÃO']:
         print('Resposta inválida!   Tente novamente')
         continue
@@ -117,7 +117,25 @@ while True:
 if chest_choice == 'sim':
     rare_items = rare_items[type_character]
     itens.append(rare_items)
-    print(f"Você encontrou: -- {rare_items} --")
-    print(f"Inventário atual: {itens}")
+    print(f'Você encontrou: -- {rare_items} --')
+    print(f'Inventário atual: {itens}')
 else:
-    print("Você ignorou o baú e seguiu em frente...")
+    print('Você ignorou o baú e seguiu em frente...')
+    
+    
+#*evento do ladrão
+    
+
+print("*" * 40)
+print("FICHA DO HERÓI".center(40))
+
+print('*' * 40)
+print(f'Nome:                {character_user}')
+print(f'Classe:              {type_character.capitalize()}')
+if len(itens) == 0:
+    print('Inventário: vazio...')
+else:
+    print(f'Inventario: ')
+    for item in itens:
+        print(f'                     [ {item} ]')
+print('*' * 40)
