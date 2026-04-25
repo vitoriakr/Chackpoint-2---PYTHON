@@ -1,39 +1,52 @@
-# Chackpoint 2 - Projeto Python 🐍
-Trabalho sobre validação e tratamento de dados utilizando listas, conjuntos de dados, bibliotecas e estruturas de repetição. O projeto simula um sitema de log in e iniciação de um jogo RPG interativo.
+# RPG Terminal – Login System and Interactive Inventory
+<p align="left"> 
+<img src="https://skillicons.dev/icons?i=python,git,github,vscode&theme=light" /> 
+</p>
+Checkpoint 2 - Python is a project developed to practice programming logic and problem-solving using Python. The application focuses on validating user inputs (email and password) and simulating a terminal-based RPG experience, where the user creates a character, chooses a class, and interacts with dynamic events.
 
-#### Linguagem ultilizada:
+---
+### Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+### Prerequisites
+To run this project locally, you will need:
 
-<img align="center" alt="Python" height="65" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+Python 3.x
+Code Editor (VS Code recommended)
+Git (optional, for cloning the repository
+---
+### Installing
+A step-by-step series of examples that tell you how to get a development environment running.
+Clone the repository:
 
-#### Estrutura do projeto:
-```
-└─ Nome do projeto
-  └─ cp2.nome do arquivo
-  └─ README.md
-```
-## ⚙️ Como executar?
-### Requisitos:
-- IDE de preferência adequada para python
-- Git configurado
-- Pacote linguagem Python (preferencialmente a versão mais recente)
+git clone https://github.com/vitoriakr/Chackpoint-2—PYTHON.git
 
-### Passo a passo ordenado: 
-1 - Crie uma pasta nova na área de trabalho
+Navigate to the project folder:
 
-2 - Clique com o botão direito e selecione 'Open Git Bash Here'
+cd Chackpoint-2—PYTHON
 
-3 - Ao abrir o terminal digite:
-```
-Git clone https://github.com/vitoriakr/Chackpoint-2---PYTHON.git
-```
--> Esse link pode ser encontrado na área 'Code' no repositório do projeto
+Open the project in your preferred code editor:
 
-4 - Com a sua IDE, abra essa pasta com o projeto clonado 
+code .
 
-5 - Clique no ícone da função 'Run'
+Run the project:
 
-6 - Abrir-se-á o terminal para rodar o projeto, jogue apenas digitando o indicado e apertando 'Enter' para enviar cada resposta
+python main.py
 
-## 🚀 Como funciona: 
-
-# COmmit da lógica 
+> Note: Adjust the file name if the main script has a different name.
+---
+## Deployment
+This project is intended to run locally in the terminal, but it can be shared via GitHub.
+Steps:
+1. Push the project to a GitHub repository
+2. Share the repository link
+---
+## Built With
+* Python – Programming logic and execution  
+* Git – Version control  
+* GitHub – Code hosting  
+---
+## Authors
+* **Vitória**  
+* **Kauã**
+* **Anita**    
+---
